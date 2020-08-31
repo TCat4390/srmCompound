@@ -21,9 +21,9 @@ def main():
     print("So maybe you want to make a subaccount just for the staking purpose, in case you're using SRM as collateral.")
     print("And please make sure you DID NOT enable the withdrawal ability of your API key.")
     print("----------------------------------------------------------------------------------------------------")
-    apiKey = input("Enter your api Key:")
-    apiSecret = input("Enter your api Secret:")
-    subName = input("Enter your subaccount name(if any), or just press enter:")
+    apiKey = input("Enter your api Key: ")
+    apiSecret = input("Enter your api Secret: ")
+    subName = input("Enter your subaccount name(if any), or just press enter: ")
     restBot = FtxClient(apiKey, apiSecret,subName)
     bal = None
     try:
@@ -47,5 +47,6 @@ def main():
             restBot.stake_request("MSRM_LOCKED",srmAvailable["MSRM_LOCKED"])
         print("Stake complete, waiting for the next hour...")
         sleep(3600)
+
 if __name__ == '__main__':
     main()
