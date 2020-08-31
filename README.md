@@ -5,7 +5,7 @@ Also this acts as a demonstration about the awesome rest API client sample FTX p
 
 ## Usage
 
-I strongly recommend that you use the srmCompound.py script, but the complied version also works.
+I strongly recommend that you use the srmCompound.py script, but the complied version also works.  
 Just run the srmCompound script, and leave it running.
 
 ## Buy me a coffee. (If you want to)
